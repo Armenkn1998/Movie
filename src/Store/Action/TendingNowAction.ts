@@ -9,7 +9,6 @@ export const fetchTendingNow = ()=>{
             dispatch(fetchingTendingNow());
             const response =await axios.get(`${URL}TendingNow`);
             dispatch(fetchSuccessTendingNow(response.data));
-            console.log(response);
             
         }
         catch(error){
@@ -26,7 +25,6 @@ export const activeTendingNow = async (id:string,setActivMovie: (e: IActivMovie)
           
             const response =await axios.get(`${URL}TendingNow/${id}`);
             setActivMovie(response.data)
-            console.log(response);
             
         }
         catch(error){

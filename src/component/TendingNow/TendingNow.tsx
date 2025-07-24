@@ -29,8 +29,8 @@ export const TendingNow = ({
             />
           </div>
         )}
-      {tendingNow?.map((el: IActivMovie) => (
-        <div onClick={() => activeMovie(el)}>
+      {tendingNow?.map((el: IActivMovie,index:number) => (
+        <div key={index} onClick={() => activeMovie(el)}>
           <img src={`/images/${el?.CoverImage}`} alt="" />
         </div>
       ))}

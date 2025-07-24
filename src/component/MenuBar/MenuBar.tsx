@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./MenuBar.css";
 export const MenuBar = () => {
   const [active, setActiv] = useState("Home");
@@ -16,7 +16,7 @@ export const MenuBar = () => {
           className={active === "Search" ? "active" : ""}
           onClick={() => setActiv("Search")}
         >
-          <img src="./images/icons/ICOn - Search.png" alt="Search" />
+          <img src="./images/icons/Search.png" alt="Search" />
           <p>Search</p>
         </div>
         <div
