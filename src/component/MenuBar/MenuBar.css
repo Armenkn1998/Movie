@@ -1,0 +1,115 @@
+.menuBar {
+  display: flex;
+  height: 100vh;
+  background-color: black;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.menuBar-box {
+  height: 450px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.menuBar-box .profile {
+  display: none;
+  align-items: center;
+  color: aliceblue;
+}
+.menuBar-box .profile .img-box{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+  }
+
+.menuBar-box div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+
+.menuBar-box .active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  border-radius: 50%;
+  background: rgb(25, 47, 71);
+  width: 60px;
+  padding-left: 0;
+}
+.menuBar-box div:hover {
+  background: rgb(43, 171, 226) !important;
+  border-radius: 10px;
+}
+
+.menuBar-box div p {
+  color: aliceblue;
+  display: none;
+  font-size: 22px;
+  margin-left: 40px;
+}
+
+.menuBar-box div img {
+  width: 20px;
+}
+.menuBar-box .profile .img-box img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50% ;
+    margin-right: 20px;
+  }
+.Info_menu {
+  width: 100%;
+  display: none;
+  color: cadetblue;
+  margin-left: 50px;
+  line-height: 30px;
+  font-size: 22px;
+}
+
+.menuBar:hover {
+  position: absolute;
+  width: 850px;
+  z-index: 1;
+  background: linear-gradient(to right, black 0%, rgba(0, 0, 0, 1.7) 12%, rgba(0, 0, 0, 0.005) 80%);
+
+  align-items: start;
+  justify-content: space-around;
+}
+
+.menuBar:hover .menuBar-box {
+  width: 300px;
+}
+.menuBar:hover .menuBar-box div {
+  width: 80%;
+  justify-content: start;
+  padding: 0 20px;
+}
+.menuBar:hover .menuBar-box .profile .img-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+   }
+.menuBar:hover .menuBar-box .profile {
+  display: flex;
+  width: 80%;
+  padding: 0;
+}
+.menuBar:hover .menuBar-box .active {
+  border-radius: 10px;
+  background: blueviolet;
+}
+.menuBar:hover .menuBar-box div p {
+  display: block;
+}
+.menuBar:hover .Info_menu {
+  display: block;
+  width: 70%;
+}

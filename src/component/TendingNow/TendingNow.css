@@ -1,0 +1,39 @@
+.TendingNow_box{
+  height: 33vh;
+    background: black;
+}
+.TendingNow_box .box {
+    position: absolute;
+    font-size: 22px;
+    bottom: 34%;
+    color:aliceblue
+}
+.TendingNow{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll !important;
+    width: 94%;
+    padding-right: 20px;
+    height: 33vh;
+   
+}
+.TendingNow::-webkit-scrollbar{
+    display: none;
+}
+
+.TendingNow div{
+    height: 100%; 
+    margin: 0 5px;
+}
+.TendingNow div  img{
+   width: 170px;
+   height: 100%; 
+   object-fit: cover;
+
+}
+
+@media (max-width:1200px){
+    .TendingNow{
+        width: 91%;
+    }
+}

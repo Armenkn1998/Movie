@@ -1,0 +1,107 @@
+.homePage {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  margin-left: 100px;
+}
+.activMovie {
+  height: 67vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+.homePage .cover {
+  display: flex;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 67vh;
+  background: black;
+}
+.videoContainer {
+  width: 100%;
+  height: 64vh;
+}
+.videoContainer > video {
+  width: 100%;
+  height: 100%;
+}
+.homePage .cover .imageContainer {
+  width: 100%;
+  height: 100%;
+}
+.homePage .movie_info{
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+}
+.homePage .cover .imageContainer img {
+  position: relative;
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+}
+.homePage .infoMovie {
+  position: relative;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.infoMovie .category {
+  color: cadetblue;
+  font-size: 18px;
+}
+.infoMovie p {
+  font-size: 20px;
+  padding: 5px 0;
+}
+.infoMovie h1 {
+  display: flex;
+  text-transform: uppercase;
+  align-items: center;
+}
+.Irishman {
+  font-size: 45px;
+  margin-left: 10px;
+}
+.btn_box {
+  display: flex;
+  width: 380px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.btn-One {
+  display: flex;
+  width: 180px;
+  padding: 10px;
+
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+}
+.btn-Two {
+  width: 180px;
+  padding: 10px;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 30px;
+  background-color: blue;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 600;
+  color: aliceblue;
+}
+.btn-One img {
+  width: 10px;
+  margin-right: 20px;
+  justify-content: space-around;
+}
